@@ -10,7 +10,11 @@ function CurrencyAPI() {
 
     const [apiInfo, setApiInfo] = useState()
 
-    const api_url = `https://api.apilayer.com/exchangerates_data/convert?to=${toExchange}&from=${fromExchange}&amount=${amount}&apikey=gWsIWv52pxghkkucUUuCzQXXkeB5Qll9`
+    const api_url = `https://api.apilayer.com/exchangerates_data/convert?to=${toExchange}&from=${fromExchange}&amount=${amount}&apikey=5nnWUUcj4NgzZaTLdVnSRtiENVAio915`
+
+    // myHeaders.append("apikey", "5nnWUUcj4NgzZaTLdVnSRtiENVAio915");
+
+
 
     useEffect(() => {
         axios.get(api_url)
